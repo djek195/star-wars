@@ -12,7 +12,6 @@ const CharactersList: React.FC = () => {
       try {
         const data = await getCharacters(page);
         setCharacters(data);
-        console.log(data);
       } catch (error) {
         console.error('Failed to fetch characters', error);
       }
